@@ -1,0 +1,9 @@
+#!/bin/bash
+
+APP=$1
+NAME=$2
+LINK=$3
+
+PATH_TO_TARGET=$PROJECT_PATH/$APP/static/js
+wget -O $PATH_TO_TARGET/$NAME.js $LINK
+ls $PATH_TO_TARGET
